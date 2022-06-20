@@ -1,13 +1,13 @@
 public class BT3 {
     public static void main(String[] args) {
-        System.out.println("Tong cac so nguyen to tu 1 den 10000 (for) la: " + For(10000));
-        System.out.println("Tong cac so nguyen to tu 1 den 10000 (do while) la: " + DoWhile(10000));
-        System.out.println("Tong cac so nguyen to tu 1 den 10000 (while) la: " + While(10000));
+        System.out.println("Tong cac so nguyen to tu 1 den 10000 (for) la: " + sumByFor(10000));
+        System.out.println("Tong cac so nguyen to tu 1 den 10000 (do while) la: " + sumByDoWhile(10000));
+        System.out.println("Tong cac so nguyen to tu 1 den 10000 (while) la: " + sumByWhile(10000));
     }
 
-    public static int For(int n) {
+    public static int sumByFor(int n) {
         int sum = 0;
-        for (int i = 1; i < n + 1; i++) {
+        for (int i = 1; i <= n ; i++) {
             if (isPrimeNumber(i)) {
                 sum += i;
             }
@@ -15,7 +15,7 @@ public class BT3 {
         return sum;
     }
 
-    public static int DoWhile(int n) {
+    public static int sumByDoWhile(int n) {
         int sum = 0;
         int i = 1;
         do {
@@ -27,7 +27,7 @@ public class BT3 {
         return sum;
     }
 
-    public static int While(int n) {
+    public static int sumByWhile(int n) {
         int sum = 0;
         int i = 1;
         while (i < n + 1) {
